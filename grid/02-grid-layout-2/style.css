@@ -9,6 +9,10 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
+  gap: 15px;
 }
 
 .container div {
@@ -31,10 +35,12 @@ html {
 }
 
 .nav {
+  grid-row: 2;
   background-color: #642cde;
 }
 
 .article {
+  grid-row: 3 / 4;
   background-color: #7E1DC3;
 }
 
